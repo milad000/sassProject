@@ -1,0 +1,14 @@
+{
+  "name": "scss_project",
+  "version": "1.0.0",
+  "description": "new try to use scss in web page.",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css"
+  },
+  "author": "Milad",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.7.2"
+  }
+}
