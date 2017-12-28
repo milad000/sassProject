@@ -80,11 +80,12 @@ body {
     opacity: 1; } }
 
 .header {
-  height: 90vh;
+  height: 85vh;
   background-image: linear-gradient(to right top, rgba(98, 47, 85, 0.4), #c689b6), url(../img/cloud.jpg);
   background-size: cover;
   background-position: top;
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%);
   position: relative; }
   .header__logo-box {
     position: absolute;
