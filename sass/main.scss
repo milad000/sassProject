@@ -1,13 +1,12 @@
-/* #fbf6f9 
-#f1e1ed 
-#e2c4da 
-#d4a6c8 
-#c689b6 
-#b76ba3 
-#ae5797 
-#9d4c87 
-#894276 
-#622f55  */
+$purple-dark:#622f55;
+$purple-base:#9d4c87;
+$purple-light:#c689b6;
+$purple-backlight:#f1e1ed;
+$gray-dark:#414244;
+$gray-base:#9b9c9f;
+$gray-light:#e6e6e7;
+
+
 *,
 *::after,
 *::before {
@@ -23,13 +22,13 @@ body {
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 1.7;
-  color: #9d4c87;
+  color: $purple-base;
   padding: 2.5rem;
   box-sizing: border-box; }
 
 .header {
   height: 90vh;
-  background-image: linear-gradient(to right top,rgba(55, 17, 99, 0.589),rgba(42, 13, 75, 0.404)),url(../img/cloud.jpg);
+  background-image: linear-gradient(to right top,rgba($purple-dark, 0.4),rgba($purple-light, 1)),url(../img/cloud.jpg);
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
@@ -65,7 +64,7 @@ body {
   backface-visibility: hidden; }
 
 .heading-primary {
-  color: #fff;
+  color: white;
   text-transform: uppercase;
   margin-bottom: 6rem;
   text-align: left; }
@@ -140,15 +139,15 @@ body {
 
 .btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 10px 16px rgba(black, 0.2); }
 
 .btn:active {
   transform: translateY(-1px);
-  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 5px 8px rgba(black, 0.2); }
 
 .btn-white {
-  background-color: #fff;
-  color: #777; }
+  background-color: white;
+  color: $purple-base; }
 
 .btn::after {
   content: "";
@@ -164,7 +163,8 @@ body {
   transition: all 0.4s; }
 
 .btn-white::after {
-  background-color: #fff; }
+  background-color: white; 
+}
 
 .btn:hover::after {
   transform: scaleX(1.4) scaleY(1.7);

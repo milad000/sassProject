@@ -1,13 +1,3 @@
-/* #fbf6f9 
-#f1e1ed 
-#e2c4da 
-#d4a6c8 
-#c689b6 
-#b76ba3 
-#ae5797 
-#9d4c87 
-#894276 
-#622f55  */
 *,
 *::after,
 *::before {
@@ -29,7 +19,7 @@ body {
 
 .header {
   height: 90vh;
-  background-image: linear-gradient(to right top, rgba(55, 17, 99, 0.589), rgba(42, 13, 75, 0.404)), url(../img/cloud.jpg);
+  background-image: linear-gradient(to right top, rgba(98, 47, 85, 0.4), #c689b6), url(../img/cloud.jpg);
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
@@ -65,7 +55,7 @@ body {
   backface-visibility: hidden; }
 
 .heading-primary {
-  color: #fff;
+  color: white;
   text-transform: uppercase;
   margin-bottom: 6rem;
   text-align: left; }
@@ -147,8 +137,8 @@ body {
   box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2); }
 
 .btn-white {
-  background-color: #fff;
-  color: #777; }
+  background-color: white;
+  color: #9d4c87; }
 
 .btn::after {
   content: "";
@@ -164,7 +154,7 @@ body {
   transition: all 0.4s; }
 
 .btn-white::after {
-  background-color: #fff; }
+  background-color: white; }
 
 .btn:hover::after {
   transform: scaleX(1.4) scaleY(1.7);
