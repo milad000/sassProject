@@ -1,8 +1,9 @@
 .grid-on{
-    margin: 5rem;
+    max-width: $grid-width;
+    margin: 10rem;
 }
 .row{
-    max-width: $grid-width;
+    max-width: inherit;
     margin: 0 auto;
     &:not(:last-child){
         margin-bottom: $gutter-vertical;
@@ -40,4 +41,7 @@
     .col-3-of-4{
         width: calc(3 * ((100% - #{$gutter-horizontal * 3}) / 4) + #{$gutter-horizontal * 2});
     }
+}
+.demo-grid{
+    [class^="col-"]{height: 3rem; background-color: $purple-base;color: white;}
 }
