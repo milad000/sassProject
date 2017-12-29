@@ -11,11 +11,8 @@
     @include clearfix;
     
     [class^="col-"]{
-        background-color: $purple-base;
-        color:white;
         float: left;
         padding: 10px;
-        text-align: center;
     
         &:not(:last-child){
             margin-right: $gutter-horizontal;
