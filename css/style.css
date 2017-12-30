@@ -165,10 +165,14 @@ body {
   .row [class^="col-"] {
     float: left;
 <<<<<<< HEAD
+<<<<<<< HEAD
     padding: 1px; }
 =======
     padding: 3px; }
 >>>>>>> Solve small issue problem with padding in grid class
+=======
+    padding: 3px; }
+>>>>>>> 7516cf3ce69202061d29525329eb48a01608387b
     .row [class^="col-"]:not(:last-child) {
       margin-right: 2.5rem; }
   .row .col-1-of-1 {
