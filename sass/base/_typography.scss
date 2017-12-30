@@ -46,3 +46,16 @@ body {
       text-shadow: .5rem 1rem 5rem rgba($purple-dark, 0.6);
     }
   }
+  .heading-tertiary{
+    font-size:1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .paragragh{
+    font-size: 1.6rem;
+
+    &:not(:last-child){
+      margin-bottom: 3rem;
+    }
+  }
