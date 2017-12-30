@@ -93,6 +93,9 @@ body {
 .u-center-text {
   text-align: center; }
 
+.u-margin-t-big {
+  margin-top: 8rem; }
+
 .u-margin-b-big {
   margin-bottom: 8rem; }
 
@@ -161,11 +164,41 @@ body {
     width: calc(2 * ((100% - 7.5rem) / 4) + 2.5rem); }
   .row .col-3-of-4 {
     width: calc(3 * ((100% - 7.5rem) / 4) + 5rem); }
+  .row .col-1-of-7 {
+    width: calc((100% - 6*2.5rem) / 7); }
 
 .demo-grid [class^="col-"] {
   height: 3rem;
   background-color: #9d4c87;
   color: white; }
+
+.calender-on {
+  max-width: 100%;
+  padding: .5rem; }
+
+.calender-line {
+  max-width: inherit;
+  margin: 0 auto; }
+  .calender-line:not(:last-child) {
+    margin-bottom: 0.2rem; }
+  .calender-line::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .calender-line [class^="cal-"] {
+    float: left;
+    padding: .2rem; }
+    .calender-line [class^="cal-"]:not(:last-child) {
+      margin-right: 1rem; }
+  .calender-line .cal-1 {
+    width: 100%; }
+  .calender-line .cal-7 {
+    width: calc((100% - 6*1rem) / 7); }
+    .calender-line .cal-7:last-child {
+      color: red; }
+
+.demo-cal [class^="cal-"] {
+  font-size: 1.1rem; }
 
 .btn:link, .btn:visited {
   text-transform: uppercase;
