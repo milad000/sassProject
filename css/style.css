@@ -56,9 +56,16 @@ body {
   text-transform: uppercase; }
 
 .paragragh {
+  color: #c689b6;
   font-size: 1.6rem; }
   .paragragh:not(:last-child) {
     margin-bottom: 3rem; }
+
+.heading-quaternary {
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase; }
 
 @keyframes moveInLeft {
   0% {
@@ -165,7 +172,7 @@ body {
   .row [class^="col-"] {
     float: left;
     padding: 1px; }
-  .row [class^="col-"]:not(:last-child) {
+    .row [class^="col-"]:not(:last-child) {
       margin-right: 2.5rem; }
   .row .col-1-of-1 {
     width: 100%; }
@@ -307,15 +314,45 @@ body {
     filter: blur(1px);
     transition: all .2s; }
 
+.feature-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 0.4rem 0.5rem rgba(65, 66, 68, 0.7); }
+  .feature-box__icon {
+    font-size: 6rem;
+    margin-bottom: .5rem;
+    display: inline-block;
+    background-image: linear-gradient(to right, #622f55, #c689b6);
+    -webkit-background-clip: text;
+    color: transparent; }
+  .feature-box:hover {
+    transform: translateY(-1.2rem) scale(1.04);
+    box-shadow: 0 1.5rem 4rem rgba(65, 66, 68, 0.7);
+    transition: all .4s; }
+
 .section-grid {
   background-color: #f1e1ed;
   padding: 10rem 0;
   margin-top: -15vh; }
 
 .section-calender {
+  margin-top: -5rem;
   background-color: #f1e1ed;
   padding: 10rem 0; }
 
 .section-image {
+  margin-top: -5rem;
   background-color: #f1e1ed;
   padding: 10rem 0; }
+
+.section-features {
+  margin-top: -5rem;
+  padding: 10rem 0;
+  background-image: linear-gradient(to right top, rgba(98, 47, 85, 0.4), #c689b6), url(../img/autumn-3.jpg);
+  background-size: cover;
+  transform: skewY(-5deg); }
+  .section-features > * {
+    transform: skewY(5deg); }

@@ -4,10 +4,23 @@
     margin-top:-15vh;
 }
 .section-calender{
+    margin-top:-5rem;
     background-color: $purple-backlight;
     padding: 10rem 0;
 }
 .section-image{
+    margin-top:-5rem;
     background-color: $purple-backlight;
     padding: 10rem 0;
+}
+.section-features{
+    margin-top:-5rem;
+    padding: 10rem 0;
+    background-image: linear-gradient(to right top,rgba($purple-dark, 0.4),rgba($purple-light, 1)),url(../img/autumn-3.jpg);
+    background-size: cover;
+    transform: skewY(-5deg);
+
+    & > *{
+        transform: skewY(5deg);
+    }
 }
