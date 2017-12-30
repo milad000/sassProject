@@ -45,9 +45,7 @@ body {
   font-size: 3.5rem;
   font-weight: 700;
   display: inline-block;
-  background-image: linear-gradient(to right, pink, rgba(98, 47, 85, 0.5));
-  -webkit-background-clip: text;
-  color: transparent; }
+  color: #622f55; }
   .heading-secondary:hover {
     transition: all .3s;
     text-shadow: 0.5rem 1rem 5rem rgba(98, 47, 85, 0.6); }
@@ -102,6 +100,9 @@ body {
 
 .u-center-text {
   text-align: center; }
+
+.u-text-to-upper {
+  text-transform: uppercase; }
 
 .u-margin-t-big {
   margin-top: 8rem; }
@@ -204,7 +205,7 @@ body {
     width: 100%; }
   .calender-line .cal-7 {
     width: calc((100% - 6*1rem) / 7); }
-    .calender-line .cal-7:last-child {
+    .calender-line .cal-7:nth-child(+n+6) {
       color: red; }
 
 .demo-cal [class^="cal-"] {
@@ -274,6 +275,31 @@ body {
 .btn-text:active {
   box-shadow: 0 0.5rem 1rem rgba(65, 66, 68, 0.6);
   transform: translateY(0); }
+
+.composition {
+  position: relative; }
+  .composition__photo {
+    width: 50%;
+    border-radius: 7px;
+    outline-offset: 3px;
+    box-shadow: 0 1rem 2rem rgba(65, 66, 68, 0.6);
+    position: absolute;
+    backface-visibility: hidden; }
+    .composition__photo--p1 {
+      left: 10rem;
+      top: 5rem; }
+    .composition__photo--p2 {
+      left: 5rem;
+      top: 10rem; }
+    .composition__photo--p3 {
+      left: 0; }
+    .composition__photo:hover {
+      z-index: 1;
+      transition: all 1s; }
+  .composition:hover .composition__photo:not(:hover) {
+    transform: scale(0.8);
+    filter: blur(1px);
+    transition: all .2s; }
 
 .section-about {
   background-color: #f1e1ed;
