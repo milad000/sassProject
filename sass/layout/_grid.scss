@@ -13,15 +13,8 @@
     
     [class^="col-"]{
         float: left;
-<<<<<<< HEAD
-<<<<<<< HEAD
         padding: 1px;
-=======
-        padding: 3px;
->>>>>>> Solve small issue problem with padding in grid class
-=======
-        padding: 3px;
->>>>>>> 7516cf3ce69202061d29525329eb48a01608387b
+
     
         &:not(:last-child){
             margin-right: $gutter-horizontal;
