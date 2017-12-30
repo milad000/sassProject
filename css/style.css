@@ -164,7 +164,7 @@ body {
     clear: both; }
   .row [class^="col-"] {
     float: left;
-    padding: 10px; }
+    padding: 3px; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 2.5rem; }
   .row .col-1-of-1 {
