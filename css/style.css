@@ -325,7 +325,7 @@ body {
     font-size: 4rem;
     margin-bottom: .5rem;
     display: inline-block;
-    background-image: linear-gradient(to right, #622f55, #c689b6);
+    background-image: linear-gradient(to right, #c689b6, #622f55);
     -webkit-background-clip: text;
     color: transparent; }
   .item-box:hover {
