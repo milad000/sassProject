@@ -1,0 +1,22 @@
+.item-box{
+    background-color: rgba($color:white, $alpha: .8);
+    font-size: 1.5rem;
+    padding: 2.5rem;
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: 0 .1rem 1rem rgba($gray-dark ,.7);
+
+    &__icon{
+        font-size: 4rem;
+        margin-bottom: .5rem;
+        display: inline-block;
+        background-image: linear-gradient(to right, $purple-dark , $purple-light);
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+    &:hover{
+        transform: translateY(-3px) scale(1.02);
+        box-shadow: 0 .2rem 2rem rgba($gray-dark ,.7);
+        transition: all .3s;
+    }
+}

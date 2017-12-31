@@ -314,6 +314,25 @@ body {
     filter: blur(1px);
     transition: all .2s; }
 
+.item-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 0.1rem 1rem rgba(65, 66, 68, 0.7); }
+  .item-box__icon {
+    font-size: 4rem;
+    margin-bottom: .5rem;
+    display: inline-block;
+    background-image: linear-gradient(to right, #622f55, #c689b6);
+    -webkit-background-clip: text;
+    color: transparent; }
+  .item-box:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 0.2rem 2rem rgba(65, 66, 68, 0.7);
+    transition: all .3s; }
+
 .feature-box {
   background-color: rgba(255, 255, 255, 0.8);
   font-size: 1.5rem;

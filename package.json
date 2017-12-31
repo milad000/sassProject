@@ -9,6 +9,7 @@
   "author": "Milad",
   "license": "ISC",
   "devDependencies": {
+    "live-server": "^1.2.0",
     "node-sass": "^4.7.2"
   }
 }
