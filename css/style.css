@@ -62,7 +62,7 @@ body {
     margin-bottom: 3rem; }
 
 .heading-quaternary {
-  color: white;
+  color: #9d4c87;
   font-size: 1.6rem;
   font-weight: 700;
   text-transform: uppercase; }
@@ -112,7 +112,7 @@ body {
   text-transform: uppercase; }
 
 .u-margin-t-verybig {
-  margin-top: 16rem; }
+  margin-top: 150px; }
 
 .u-margin-t-big {
   margin-top: 8rem; }
@@ -134,7 +134,7 @@ body {
 
 .header {
   height: 85vh;
-  background-image: linear-gradient(to right top, rgba(98, 47, 85, 0.4), #c689b6), url(../img/cloud.jpg);
+  background-image: linear-gradient(to right top, rgba(98, 47, 85, 0.4), #c689b6), url(../img/autumn-2.jpg);
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%);
@@ -188,8 +188,8 @@ body {
     width: calc(2 * ((100% - 7.5rem) / 4) + 2.5rem); }
   .row .col-3-of-4 {
     width: calc(3 * ((100% - 7.5rem) / 4) + 5rem); }
-  .row .col-1-of-7 {
-    width: calc((100% - 6*2.5rem) / 7); }
+  .row .col-1-of-5 {
+    width: calc((100% - 4*2.5rem) / 5); }
 
 .demo-grid [class^="col-"] {
   height: 3rem;
@@ -277,7 +277,7 @@ body {
   text-decoration: none;
   padding: 1rem;
   transition: all .2s;
-  border-radius: 5px; }
+  border-radius: .5rem; }
 
 .btn-text:hover {
   background-color: #9d4c87;
@@ -352,7 +352,9 @@ body {
   margin-top: -5rem;
   padding: 10rem 0;
   background-image: linear-gradient(to right top, rgba(98, 47, 85, 0.4), #c689b6), url(../img/autumn-3.jpg);
-  background-size: cover;
-  transform: skewY(-5deg); }
-  .section-features > * {
-    transform: skewY(5deg); }
+  background-size: cover; }
+
+.section-categories {
+  padding: 10rem 0;
+  background-image: linear-gradient(to right top, rgba(255, 192, 203, 0.4), rgba(198, 137, 182, 0.1));
+  background-size: cover; }

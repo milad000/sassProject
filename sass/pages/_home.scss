@@ -18,9 +18,19 @@
     padding: 10rem 0;
     background-image: linear-gradient(to right top,rgba($purple-dark, 0.4),rgba($purple-light, 1)),url(../img/autumn-3.jpg);
     background-size: cover;
-    transform: skewY(-5deg);
+    // transform: skewY(-5deg);
 
-    & > *{
-        transform: skewY(5deg);
+    &>*{
+        // transform: skewY(5deg);
+    }
+}
+.section-categories{
+    padding: 10rem 0;
+    background-image: linear-gradient(to right top,rgba(pink, 0.4),rgba($purple-light, .1));
+    background-size: cover;
+    // transform: skewY(-5deg);
+
+    &>*{
+        // transform: skewY(5deg);
     }
 }
