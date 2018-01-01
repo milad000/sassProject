@@ -63,12 +63,7 @@ body {
     margin-bottom: 3rem;
   }
 }
-.heading-quaternary {
-  color: $purple-base;
-  font-size: 1.6rem;
-  font-weight: 700;
-  text-transform: uppercase;
-}
+
 .heading-card {
   &__title {
     text-transform: uppercase;
@@ -101,13 +96,8 @@ body {
     }
     &--front-2nd {
       font-weight: 300;
-      color: white;
       margin-left: 4rem;
       margin-top: 0.1rem;
-    }
-    &--back {
-      color: $purple-base;
-      text-align: center;
     }
   }
 }
