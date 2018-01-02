@@ -420,9 +420,7 @@ body {
     position: relative; }
   .story__img {
     height: 100%;
-    transform: translateX(-4rem) scale(1.4);
-    transition: all .5s;
-    backface-visibility: hidden; }
+    transform: translateX(-4rem) scale(1.2); }
   .story__text {
     transform: translateX(2rem); }
   .story__caption {
