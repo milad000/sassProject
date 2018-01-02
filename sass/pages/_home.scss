@@ -1,7 +1,9 @@
 .section-grid{
-    background-color: $purple-backlight;
+    background-color: transparent;
     padding: 10rem 0;
     margin-top:-15vh;
+    position: relative;
+
 }
 .section-calender{
     margin-top:-5rem;
@@ -47,10 +49,4 @@
 .section-figure{
     padding: 10rem 0;
     background-image: linear-gradient(to right top,rgba(pink, 0.4),rgba($purple-light, .1));
-    background-size: cover;
-    // transform: skewY(-5deg);
-
-    &>*{
-        // transform: skewY(5deg);
-    }
 }

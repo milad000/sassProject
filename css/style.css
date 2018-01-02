@@ -442,6 +442,20 @@ body {
     transform: translateX(-4rem) scale(1);
     filter: blur(3px) brightness(90%); }
 
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: .3;
+  overflow: hidden; }
+  .bg-video__content {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+
 .item-box {
   background-color: rgba(255, 255, 255, 0.8);
   font-size: 1.5rem;
@@ -481,9 +495,10 @@ body {
     transition: all .4s; }
 
 .section-grid {
-  background-color: #f1e1ed;
+  background-color: transparent;
   padding: 10rem 0;
-  margin-top: -15vh; }
+  margin-top: -15vh;
+  position: relative; }
 
 .section-calender {
   margin-top: -5rem;
@@ -513,5 +528,4 @@ body {
 
 .section-figure {
   padding: 10rem 0;
-  background-image: linear-gradient(to right top, rgba(255, 192, 203, 0.4), rgba(198, 137, 182, 0.1));
-  background-size: cover; }
+  background-image: linear-gradient(to right top, rgba(255, 192, 203, 0.4), rgba(198, 137, 182, 0.1)); }
