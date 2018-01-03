@@ -252,6 +252,41 @@ body {
   background-color: #9d4c87;
   color: white; }
 
+.footer {
+  background-color: #414244;
+  color: #f1e1ed;
+  padding: 10rem 0;
+  font-size: 1.4rem;
+  font-weight: 300; }
+  .footer__logo-box {
+    text-align: center;
+    margin-bottom: 8rem; }
+  .footer__logo {
+    width: 15rem;
+    height: auto; }
+  .footer__navigation {
+    width: 80%;
+    border-top: 1px solid rgba(230, 230, 231, 0.3); }
+  .footer__list {
+    list-style: none;
+    margin-top: 1.5rem; }
+  .footer__item {
+    display: inline-block; }
+    .footer__item:not(:last-child) {
+      margin-right: 1rem; }
+  .footer__link:link, .footer__link:visited {
+    color: #9d4c87;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline; }
+  .footer__link:hover, .footer__link:active {
+    color: #c689b6;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+    transform: rotate(7deg) scale(1.3); }
+  .footer__copyright {
+    border-top: 1px solid rgba(230, 230, 231, 0.3);
+    padding-top: 1.5rem; }
+
 .calender-on {
   max-width: 100%;
   padding: .5rem; }
@@ -417,7 +452,8 @@ body {
     -webkit-clip-path: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
     transform: translateY(-1.5rem);
-    position: relative; }
+    position: relative;
+    backface-visibility: hidden; }
   .story__img {
     height: 100%;
     transform: translateX(-4rem) scale(1.2); }

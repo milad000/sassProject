@@ -17,6 +17,8 @@
         clip-path: circle(50% at 50% 50%);
         transform: translateY(-1.5rem);
         position: relative;
+        backface-visibility: hidden;
+
 
     }
 
