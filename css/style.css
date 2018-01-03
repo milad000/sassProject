@@ -188,6 +188,114 @@ body {
 .u-color-white {
   color: white; }
 
+.navigation__checkbox {
+  display: none; }
+
+.navigation__button {
+  background-color: white;
+  border-radius: 50%;
+  height: 7rem;
+  width: 7rem;
+  position: fixed;
+  top: 5.5rem;
+  right: 5.5rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+  text-align: center;
+  cursor: pointer;
+  z-index: 2000; }
+
+.navigation__background {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 6rem;
+  right: 6rem;
+  background-image: radial-gradient(#c689b6, #622f55);
+  z-index: 1000;
+  transition: all 0.4s; }
+
+.navigation__nav {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1500;
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  opacity: 0;
+  width: 0; }
+
+.navigation__list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  text-align: center;
+  padding: 2rem; }
+
+.navigation__item {
+  margin: 1rem; }
+
+.navigation__link:link, .navigation__link:visited {
+  font-size: 3rem;
+  text-decoration: none;
+  font-weight: 100;
+  color: white;
+  text-transform: uppercase;
+  background-image: linear-gradient(125deg, transparent 0%, transparent 50%, white 50%);
+  background-size: 250%;
+  transition: all 0.5s; }
+
+.navigation__link:hover, .navigation__link:active {
+  background-position: 100%;
+  color: #9d4c87;
+  font-weight: 300;
+  padding: 2rem; }
+
+.navigation__checkbox:checked ~ .navigation__background {
+  transform: scale(80); }
+
+.navigation__checkbox:checked ~ .navigation__nav {
+  opacity: 1;
+  width: 100%; }
+
+.navigation__icon {
+  position: relative;
+  transform: translateY(3.5rem);
+  transition: all .5s; }
+  .navigation__icon, .navigation__icon::before, .navigation__icon::after {
+    width: 3rem;
+    height: 2px;
+    background-color: #414244;
+    display: inline-block; }
+  .navigation__icon::before, .navigation__icon::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    transition: all .5s; }
+  .navigation__icon::before {
+    top: -0.8rem; }
+  .navigation__icon::after {
+    top: 0.8rem; }
+
+.navigation__button:hover .navigation__icon::after {
+  top: 1rem; }
+
+.navigation__button:hover .navigation__icon::before {
+  top: -1rem; }
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon {
+  background-color: transparent; }
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon::before {
+  top: 0;
+  transform: rotateZ(135deg); }
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon::after {
+  top: 0;
+  transform: rotateZ(-135deg); }
+
 .header {
   height: 85vh;
   background-image: linear-gradient(to right top, rgba(98, 47, 85, 0.4), #c689b6), url(../img/autumn-2.jpg);
