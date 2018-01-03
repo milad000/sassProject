@@ -282,10 +282,12 @@ body {
   .footer__link:hover, .footer__link:active {
     color: #c689b6;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
-    transform: rotate(7deg) scale(1.3); }
+    transform: rotate(5deg), scale(1.3); }
   .footer__copyright {
     border-top: 1px solid rgba(230, 230, 231, 0.3);
-    padding-top: 1.5rem; }
+    padding-top: 1.5rem;
+    width: 80%;
+    float: right; }
 
 .calender-on {
   max-width: 100%;
