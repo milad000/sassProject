@@ -5,8 +5,8 @@
   &__button {
     background-color: white;
     border-radius: 50%;
-    height: 7rem;
-    width: 7rem;
+    height: 5rem;
+    width: 5rem;
     position: fixed;
     top: 5.5rem;
     right: 5.5rem;
@@ -16,8 +16,8 @@
     z-index: 2000;
   }
   &__background {
-    height: 6rem;
-    width: 6rem;
+    height: 4rem;
+    width: 4rem;
     border-radius: 50%;
     position: fixed;
     top: 6rem;
@@ -71,9 +71,10 @@
       padding: 2rem;
     }
   }
-  &__checkbox:checked ~ &__background {
+  &__checkbox:checked ~ &__background  {
     transform: scale(80);
   }
+
   &__checkbox:checked ~ &__nav {
     opacity: 1;
     width: 100%;
@@ -81,7 +82,7 @@
   // ICON
   &__icon {
     position: relative;
-    transform: translateY(3.5rem);
+    transform: translateY(2.5rem);
     transition: all .5s;
 
     &,
