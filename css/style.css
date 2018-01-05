@@ -425,15 +425,17 @@ body {
 .demo-cal [class^="cal-"] {
   font-size: 1rem; }
 
-.btn:link, .btn:visited {
+.btn, .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
   font-size: 1.4rem;
   padding: 1rem 2rem;
   display: inline-block;
   border-radius: 10rem;
-  transition: all .15s;
-  position: relative; }
+  transition: all 0.15s;
+  position: relative;
+  border: none;
+  cursor: pointer; }
 
 .btn:hover {
   transform: translateY(-3px);
@@ -459,7 +461,7 @@ body {
 .btn::after {
   content: "";
   display: inline-block;
-  opacity: .2;
+  opacity: 0.2;
   width: 100%;
   height: 100%;
   border-radius: 10rem;
@@ -470,19 +472,19 @@ body {
   transition: all 0.4s; }
 
 .btn--animated {
-  animation: moveInBottom 1s ease-in-out .8s;
+  animation: moveInBottom 1s ease-in-out 0.8s;
   animation-fill-mode: backwards; }
 
 .btn-text:link, .btn-text:visited {
   font-size: 1.6rem;
-  letter-spacing: .3rem;
+  letter-spacing: 0.3rem;
   color: white;
   background-color: #622f55;
   display: inline-block;
   text-decoration: none;
   padding: 1rem;
-  transition: all .2s;
-  border-radius: .5rem; }
+  transition: all 0.2s;
+  border-radius: 0.5rem; }
 
 .btn-text:hover {
   background-color: #9d4c87;
@@ -548,6 +550,79 @@ body {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
     transform: rotateY(0deg); }
+
+.form__group:not(:last-child) {
+  margin-bottom: 2rem; }
+
+.form__input {
+  font-size: 1.5rem;
+  font-family: inherit;
+  color: inherit;
+  padding: 1.5rem 2rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  border-bottom: 3px solid transparent;
+  width: 90%;
+  display: block; }
+  .form__input:focus {
+    outline: none;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.6);
+    border-bottom: 3px solid green; }
+  .form__input:focus:invalid {
+    border-bottom: 3px solid red; }
+  .form__input::-webkit-input-placeholder {
+    color: #414244; }
+
+.form__label {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-left: 2rem;
+  margin-top: .7rem;
+  display: block;
+  transition: all .3s; }
+
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4rem); }
+
+.form__radio-group {
+  width: 49%;
+  display: inline-block; }
+
+.form__radio-label {
+  font-size: 1.6rem;
+  cursor: pointer;
+  position: relative;
+  padding-left: 5rem; }
+
+.form__radio-button {
+  height: 3rem;
+  width: 3rem;
+  border: 5px solid #9d4c87;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: -.4rem; }
+  .form__radio-button::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: "";
+    display: block;
+    height: 1.3rem;
+    width: 1.3rem;
+    border-radius: 50%;
+    background-color: #9d4c87;
+    opacity: 0; }
+
+.form__radio-input:checked ~ .form__radio-label .form__radio-button::after {
+  opacity: 1; }
+
+.form__radio-input {
+  display: none; }
 
 .popup {
   height: 100vh;
@@ -728,3 +803,17 @@ body {
 .section-figure {
   padding: 10rem 0;
   background-image: linear-gradient(to right top, rgba(255, 192, 203, 0.4), rgba(198, 137, 182, 0.1)); }
+
+.section-book {
+  padding: 15rem 0;
+  background-image: linear-gradient(to right top, rgba(255, 192, 203, 0.4), rgba(198, 137, 182, 0.1)); }
+
+.book {
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/autumn-2.jpg);
+  background-size: 100%;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.6);
+  height: 40rem; }
+  .book__form {
+    width: 50%;
+    padding: 6rem; }
