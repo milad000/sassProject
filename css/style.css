@@ -446,6 +446,10 @@ body {
   transform: translateY(-1px);
   box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2); }
 
+.btn__green {
+  background-color: green;
+  color: white; }
+
 .btn--white {
   background-color: white;
   color: #9d4c87; }
@@ -544,6 +548,55 @@ body {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
     transform: rotateY(0deg); }
+
+.popup {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .5s; }
+  .popup:target {
+    opacity: 1;
+    visibility: visible; }
+  .popup:target .popup__content {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1); }
+  .popup__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    background-color: white;
+    box-shadow: 0 1rem 2rem black;
+    border-radius: 3px;
+    display: table;
+    overflow: hidden;
+    transform: translate(-50%, -50%) scale(0.1);
+    transition: all .5s .4s ease; }
+  .popup__left {
+    width: 33.33333%;
+    display: table-cell; }
+  .popup__right {
+    width: 66.666667%;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 5rem; }
+  .popup__img {
+    width: 100%;
+    display: block; }
+  .popup__text {
+    font-size: 1rem;
+    margin: 2.5rem 0;
+    column-count: 2;
+    column-gap: 2rem;
+    column-rule: 1px solid #e6e6e7;
+    hyphens: auto; }
 
 .story {
   width: 75%;

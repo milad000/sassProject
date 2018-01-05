@@ -19,11 +19,18 @@
         opacity: 0; }
     
     }
+
     
     &:active {
       transform: translateY(-1px);
       box-shadow: 0 5px 8px rgba(black, 0.2); }
-    
+
+      &__green{
+        background-color: green;
+        color: white;
+      }
+
+
     &--white {
       background-color: white;
       color: $purple-base; 
@@ -77,4 +84,5 @@
     transform: translateY(0);
 
   }
+
 }
